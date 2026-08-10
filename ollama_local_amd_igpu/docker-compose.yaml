@@ -1,0 +1,26 @@
+services:
+  ollama:
+    image: ollama/ollama:0.30.6
+    container_name: ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    devices:
+      - /dev/dri:/dev/dri
+      - /dev/kfd:/dev/kfd
+#    group_add:
+#      - video
+#      - render
+    # Optional: Required on some hosts to allow memory mapping for compute
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      - OLLAMA_VULKAN=1
+      - AMD_VULKAN_ICD=RADV
+      # Optional: Force detection if iGPU is missed
+      - OLLAMA_IGPU_ENABLE=1
+
+volumes:
+  ollama_data:
