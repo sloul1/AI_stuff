@@ -1,3 +1,15 @@
+# Run LLMs locally using Docker on Fedora 43
+
+# Laptop specs:
+# - AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx
+# - 16 GB RAM
+
+# Pull LLMs from: https://ollama.com/search
+# docker exec -it ollama ollama pull gemma4:e2b
+
+# Run LLM using cli:
+# docker exec -it ollama ollama run gemma4:e2b
+
 services:
   ollama:
     image: ollama/ollama:0.30.6
