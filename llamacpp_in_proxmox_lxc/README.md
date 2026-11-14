@@ -27,6 +27,6 @@ NVIDIA developer documentation [install instructions](https://developer.nvidia.c
 
 ## Create LXC container
 
-- CPU: 6(/12) cores of Ryzen 5 5600U
+- CPU: 6(/12) cores of Ryzen 5 5600G
 - RAM: 16384 MiB
 - Storage: 40 GB 
