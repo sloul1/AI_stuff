@@ -1,2 +1,2 @@
-# LLM_stuff
+# AI_stuff
 Self explanatory
