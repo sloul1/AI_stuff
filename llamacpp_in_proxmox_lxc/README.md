@@ -1,4 +1,4 @@
-# Install llamacpp on Proxmox 9
+# Install llamacpp on Proxmox 9 with GPU passthrough to LXC 
 
 Created: 2026/11  
 Tested on:  pve-manager/9.2.26/41a0e2e09b9e6f9d (running kernel: 7.0.14-28-pve)  
